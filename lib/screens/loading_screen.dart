@@ -10,11 +10,11 @@ class _LoadingScreenState extends State<LoadingScreen> {
 
   void getLocation() async {
 
-    LocationPermission permission = await Geolocator.checkPermission();
-    print(permission);
-
-    LocationPermission permissioxn = await Geolocator.requestPermission();
-    print(permissioxn);
+    // LocationPermission permission = await Geolocator.checkPermission();
+    // print(permission);
+    //
+    // LocationPermission permissioxn = await Geolocator.requestPermission();
+    // print(permissioxn);
 
     Position position = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
     print(position);
